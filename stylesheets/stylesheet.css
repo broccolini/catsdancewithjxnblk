@@ -62,7 +62,6 @@ body {
 }
 
 header {
-
 }
 
 h1 {
@@ -76,7 +75,7 @@ section, div {
   margin: 0 auto;
 }
 
-div {
+.div {
   padding-top: 1em;
 }
 
@@ -168,14 +167,53 @@ img {
   left: -25%;
 }
 
-.bgwhite {
-  background-color: #fff;
+.imgh5 {
+  top: 5%;
+}
+
+ /*DANCING JXNBLK IN A CAGE */
+
+.cagediv {
+  width: 192px;
+  height: 598px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.cage {
+  background: url(../images/cage.svg) no-repeat -304px 112px;
+  position: absolute;
+  width: 100%;
+  height: 745px;
+  bottom: 0;
+}
+
+.imgjxn {
+  padding-top: 230px;
+  position: relative;
 }
 
 
+/* ANIMATIONS */
 
+@-webkit-keyframes slidestop {
+  0% {
+    top:-900px;
+  }
+  100%{
+    bottom:100px;
+  }
+}
 
+/* ANIMATION STYLES */
 
+.slidestop{
+  -webkit-animation: slidestop 1s normal ease-in-out;
+  -webkit-animation-duration: 8s;
+}
 
 
 

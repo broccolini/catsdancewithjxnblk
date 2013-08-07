@@ -221,6 +221,7 @@ img {
     top:-900px;
   }
   100%{
+    top: 0;
     bottom:100px;
   }
 }
@@ -228,8 +229,11 @@ img {
 /* ANIMATION STYLES */
 
 .slidestop{
+  top:-900px;
   -webkit-animation: slidestop 3s normal ease-in-out;
   -webkit-animation-duration: 16s;
+  -webkit-animation-delay: 8s;
+  -webkit-animation-fill-mode: forwards;
 }
 
 

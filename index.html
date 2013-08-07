@@ -7,6 +7,10 @@
     <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
 
+    <script src="//connect.soundcloud.com/sdk.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.4/angular.min.js"></script>
+    <script src="js/plangular.js"></script>
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -14,8 +18,13 @@
     <title>Cats Dance With Jxnblk</title>
     <meta name="description" content="Animated gifs of cats dancing with Jxnblk">
   </head>
-  <body>
-    <header>
+  <body ng-app="plangular">
+    
+      <header plangular data-src="'http://soundcloud.com/jxnblk/plangular'">
+      <a href="" ng-click="player.play(track)" ng-hide="player.playing == track">Play</a>
+      <a href="" ng-click="player.pause()" ng-show="player.playing == track">Pause</a>
+      <h2>{{ track.user.username }} - {{ track.title }}</h2>
+
       <div class="div"><h1>Cats Dance With Jxnblk!</h1></div>
     </header>
     <section>

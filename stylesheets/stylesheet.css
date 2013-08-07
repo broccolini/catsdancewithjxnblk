@@ -61,6 +61,10 @@ body {
   color: #f2f2f2;
 }
 
+a {
+  color: #f2f2f2;
+}
+
 header {
 }
 
@@ -199,21 +203,21 @@ img {
 
 /* ANIMATIONS */
 
-@-webkit-keyframes slidestop {
+/*@-webkit-keyframes slidestop {
   0% {
     top:-900px;
   }
   100%{
     bottom:100px;
   }
-}
+}*/
 
 /* ANIMATION STYLES */
 
-.slidestop{
+/*.slidestop{
   -webkit-animation: slidestop 1s normal ease-in-out;
   -webkit-animation-duration: 8s;
-}
+}*/
 
 
 

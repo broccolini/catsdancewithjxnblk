@@ -253,6 +253,9 @@ img {
   z-index: 0;
 }
 
+.info {
+  display: none;
+}
 
 
 

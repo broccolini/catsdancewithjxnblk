@@ -199,15 +199,15 @@ img {
 }
 
 .cage {
-  background: url(../images/cage.svg) no-repeat -304px 182px;
+  background: url(../images/cage.svg) no-repeat -304px 112px;
   position: absolute;
   width: 100%;
-  height: 805px;
+  height: 745px;
   bottom: 0;
 }
 
 .imgjxn {
-  padding-top: 240px;
+  padding-top: 230px;
   position: relative;
 }
 

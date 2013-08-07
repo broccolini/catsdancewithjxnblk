@@ -62,6 +62,8 @@ body {
 }
 
 a {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
   color: #f2f2f2;
   text-decoration: none;
 }
@@ -178,6 +180,14 @@ img {
 
  /*DANCING JXNBLK IN A CAGE */
 
+#party {
+    display:none;
+  }
+  #party:target {
+    display:block;
+  }
+
+
 .cagediv {
   width: 192px;
   height: 598px;
@@ -189,20 +199,22 @@ img {
 }
 
 .cage {
-  background: url(../images/cage.svg) no-repeat -304px 112px;
+  background: url(../images/cage.svg) no-repeat -304px 182px;
   position: absolute;
   width: 100%;
-  height: 745px;
+  height: 805px;
   bottom: 0;
 }
 
 .imgjxn {
-  padding-top: 230px;
+  padding-top: 240px;
   position: relative;
 }
 
 
 /* ANIMATIONS */
+
+
 
 @-webkit-keyframes slidestop {
   0% {
@@ -216,29 +228,32 @@ img {
 /* ANIMATION STYLES */
 
 .slidestop{
-  -webkit-animation: slidestop 1s normal ease-in-out;
-  -webkit-animation-duration: 8s;
+  -webkit-animation: slidestop 3s normal ease-in-out;
+  -webkit-animation-duration: 16s;
 }
 
 
  /*PLANGULAR STYLES */
 
  .party {
-    margin-top: 50px;
+    margin-top: -4px;
  }
 
 .button {
   background-color: #EA4C88;
   border-radius: 4px;
-  width: 300px;
+  width: 320px;
   height: 50px;
   display: block;
   margin: 0 auto;
-  padding: 10px;
+  padding: 10px 20px 6px;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  z-index: 0;
 }
+
+
 
 
 

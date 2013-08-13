@@ -88,6 +88,8 @@ section, div, footer {
 
 section {
   margin-top: -33px;
+  border: 5px solid #f2f2f2;
+  clear: both;
 }
 
 article {
@@ -133,6 +135,10 @@ article {
 
 .yellow {
   background-color: rgba(255,204,0, 0.3);
+}
+
+.light-gray {
+  background-color: #f2f2f2;
 }
 
 img {
@@ -271,7 +277,8 @@ img {
   display: block;
   margin: 0 auto;
   padding: 10px 20px 6px;
-  font-size: 30px;
+  font-size: 28px;
+  text-align: center;
   font-weight: 700;
   text-transform: uppercase;
   z-index: 0;
@@ -288,6 +295,79 @@ footer {
 }
 
 
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+ h1 {
+    font-size: 60px;
+    padding-bottom: 12px;
+  }
+  
+  article {
+    width: 179px;
+    height: 179px;
+  }
+  
+  .button {
+    font-size: 26px;
+    text-align: center;
+  }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 40px;
+    padding-bottom: 19px;
+  }
+  
+  article {
+    width: 176px;
+    height: 176px;
+  }
+
+  .color {
+    width: 176px;
+    height: 176px;
+  }
+  .button {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  h1 {
+    font-size: 30px;
+    padding-bottom: 22px;
+  }
+  
+  article {
+    width: 145px;
+    height: 145px;
+  }
+
+  .color {
+    width: 145px;
+    height: 145px;
+  }
+  .button {
+    font-size: 22px;
+    text-align: center;
+    width: 260px;
+    padding: 14px 10px 0px;
+  }
+}
 
 
 
